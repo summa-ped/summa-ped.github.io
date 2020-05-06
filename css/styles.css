@@ -1,0 +1,33 @@
+.page {
+    background-color: white;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 100px;
+    border-radius: 50px
+}
+
+.brand {
+    width: 70%
+}
+
+.foot {
+    padding: 20px
+}
+
+/*.text-center {
+    text-align: center
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%
+}
+
+.summa {
+    font-family: 'Agency FB', arial;
+} */
