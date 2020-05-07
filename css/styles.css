@@ -23,7 +23,7 @@
 
 .brand {
     display: none;
-    transition: all 1s ease;
+    transition: transform 1s ease;
 }
 
 /*.logo:hover {

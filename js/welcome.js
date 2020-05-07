@@ -101,10 +101,10 @@ var showBrand = function () {
     sleep(1000).then(() => { logo.style.transform = 'none'; });
     sleep(1500).then(() => { word.style.transform = 'none'; });
 
-    sleep(3000).then(() => { logo.style = 'display: none'; });
-    sleep(3000).then(() => { brand.style = 'display: block'; });
-    sleep(3000).then(() => { brandbox.style.transform = 'translate(0px, -25%)'; });
-    sleep(3000).then(() => { word.style = 'display: none'; });
+    sleep(2500).then(() => { logo.style = 'display: none'; });
+    sleep(2500).then(() => { brand.style = 'display: block'; });
+    sleep(2500).then(() => { brandbox.style.transform = 'translate(0px, -25%)'; });
+    sleep(2500).then(() => { word.style = 'display: none'; });
 }
 
 var grow = function (classe) {
