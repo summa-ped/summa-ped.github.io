@@ -1,5 +1,6 @@
 .bg {
     background-color: black;
+    overflow: hidden; /* Hide scrollbars */
 }
 
 .page {
@@ -12,6 +13,19 @@
     transition: transform 1s ease;
 }
 
+.full-welcome {
+    transition: transform 1s ease;
+}
+
+.brand-box {
+    transition: transform 1s ease;
+}
+
+.brand {
+    display: none;
+    transition: all 1s ease;
+}
+
 /*.logo:hover {
     transform: rotate(-60deg);
 }*/
@@ -19,7 +33,7 @@
 .word{
     margin: auto;
     color: white;
-    font-size: 200px;
+    font-size: 150px;
     font-family: 'Fira Code', sans-serif;
     font-weight: 300;
     max-width: 100%;
