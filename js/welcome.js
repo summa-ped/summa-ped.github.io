@@ -57,5 +57,6 @@ var welcome = function () {
 }
 
 $(document).ready(function () {
-    wordflick();
+    document.querySelector('.logo').style.transform = 'scale(1.15)'
+    sleep(1000).then(() => { welcome(); });
 });
