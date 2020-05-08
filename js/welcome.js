@@ -5,12 +5,21 @@ var
     offset = 0,
     len = words.length,
     forwards = true,
+    flag = true,
     skip_count = 0,
     skip_delay = 5,
-    speed = 150;
+    speed = 150,
+    under = '_';
 
 var wordflick = function () {
-    setInterval(function () {
+    var inter = setInterval(function () {
+        if (flag) {
+            under = '_';
+            flag = false;
+        } else {
+            under = '';
+            flag = true;
+        }
         if (forwards) {
             if (offset >= words[i].length) {
                 ++skip_count;
@@ -37,14 +46,23 @@ var wordflick = function () {
             }
             else {
                 //offset--;
+                sleep(1300).then(() => { clearInterval(inter); });
+                
             }
         }
-        $('.word').text(part);
+        $('.word').text(part+under);
     }, speed);
-};
+}
 
 var wordback = function () {
     setInterval(function () {
+        if (flag) {
+            under = '_';
+            flag = false;
+        } else {
+            under = '';
+            flag = true;
+        }
         if (forwards) {
             if (offset >= words[i].length) {
                 ++skip_count;
@@ -69,12 +87,12 @@ var wordback = function () {
             offset--;
         }
         if (part.length > 1) {
-            $('.word').text(part);
+            $('.word').text(part+under);
         } else {
             $('.word').text('');
         }
     }, speed);
-};
+}
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
