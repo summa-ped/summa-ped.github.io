@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<body>
+<body class="font-light">
 <!--navbarinit -->
     <style>
         /* time1 = time1 * 10
@@ -156,14 +156,23 @@
             left: 0px;
             z-index: 10;
         }
+        .btn-group{
+            background-color: transparent;
+        }
+        .btn-language:hover{
+            color: #fff;
+        }
     </style>   
     <div id="navbar" class="container-fluid">
         <nav class="navbar">
-            <div>
-                pt/en
+            <div >
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-language">pt</button>
+                    <button type="button" class="btn btn-language">en</button>
+                </div>
             </div>
             <div>
-                dasd 
+                summa 
             </div>
             <div class="">
                 <input type="checkbox" id="btn">
@@ -183,6 +192,12 @@
         </nav>
     </div>
 <!--navbar end-->
+    <div class="container">
+        <div class="mx-auto" style="width: 500px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
