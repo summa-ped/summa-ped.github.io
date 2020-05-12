@@ -54,11 +54,11 @@
     margin-top: 10%;
 }
 
-.test {
+.full-width {
     width: 100%;
 }
 
-.test2 {
+.font-light {
     color: lightgray;
     font-family: 'Fira Code', sans-serif;
     font-weight: 300;
