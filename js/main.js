@@ -7,3 +7,5 @@ function changeLang(lang){
         $("#en").addClass("active");
     }
 }
+
+$(".parallax").height(window.screen.availHeight);
