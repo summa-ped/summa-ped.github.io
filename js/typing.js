@@ -1,5 +1,5 @@
 var
-    words = ['Science', 'Data', 'AI'],
+    words = ['Data', 'Science', 'AI'],
     part,
     i = 0,
     offset = 0,
