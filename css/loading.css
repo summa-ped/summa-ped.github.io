@@ -1,0 +1,30 @@
+/* time1 = time1 * 10
+time2 = time2 * 10
+time3 = time3 * 10 */
+body {
+    min-height: 100vh;
+    background: #000;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+#logo-pieces {
+  width: 20%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+.piece {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  width: 50px;
+  transition: transform 1s ease;
+}
+#logo-done {
+  display: none;
+}
