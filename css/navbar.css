@@ -129,12 +129,9 @@ body {
   }
   .navbar{
       background-color: transparent;
-      position: fixed;
       width: 100%;
-      top:0px;
-      left: 0px;
       z-index: 10;
-      height: 10px;
+      height: auto;
   }
   .btn-group{
       background-color: transparent;
@@ -153,11 +150,14 @@ body {
     transform: scale(1.1);
   }
   #centralLogo{
-    margin-left:-6%;
-    margin-top:-3px;
-    width: 7%;
-    position: fixed;
+    width: 100%;
+    margin: 0px!important;
+  }
+  .center-fix{
+    width: 5%;
   }
   .hamburgerMenu{
-      margin-top: 1%;
+      padding-right: 2%;
+      right: 0;
+      position: fixed;
   }

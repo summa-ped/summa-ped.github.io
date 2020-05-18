@@ -52,11 +52,6 @@
             text-shadow: 2px 2px 8px #000;
         }
 
-        .dist {
-            margin-top: 3%;
-            margin-bottom: 3%;
-        }
-
         .sp {
             height: 50px;
             background-color: transparent;
@@ -97,39 +92,38 @@
 </head>
 
 <body class="font-light">
-    <!-- NAVBAR -->
-    <div id="navbar" class="container-fluid">
-        <nav class="navbar">
-            <div class="btn-group" role="group">
-                <button id="pt" type="button" onclick="changeLang(0)" class="btn btn-language active">pt</button>
-                <span style="padding-top: 6px; padding-bottom: 6px;">/</span>
-                <button id="en" type="button" onclick="changeLang(1)" class="btn btn-language">en</button>
-            </div>
-            <div class="mx-auto">
-                <a href="#"><img id="centralLogo" src="img/summaBrandOnly_White.png"></a>
-            </div>
-            <div class="hamburgerMenu">
-                <input type="checkbox" id="btn">
-
-                <label class="menu" for="btn">
-                    <span class="top">
-                        <span class="inner"></span>
-                    </span>
-                    <span class="middle">
-                        <span class="inner"></span>
-                    </span>
-                    <span class="bottom">
-                        <span class="inner"></span>
-                    </span>
-                </label>
-            </div>
-        </nav>
-    </div>
-    <!-- NAVBAR END -->
-
     <!-- MAIN PARALLAX -->
-    <div class="parallax">
-        <div class="sp"></div>
+    <div id="mainpage" class="parallax">
+        <!-- NAVBAR -->
+        <div id="navbar" class="container-fluid">
+            <nav class="navbar text-center">
+                <div class="btn-group" role="group">
+                    <button id="pt" type="button" onclick="changeLang(0)" class="btn btn-language active">pt</button>
+                    <span style="padding-top: 6px; padding-bottom: 6px;">/</span>
+                    <button id="en" type="button" onclick="changeLang(1)" class="btn btn-language">en</button>
+                </div>
+                <a href="#" class="navbar-brand mx-auto" style="width: 10%;">
+                    <img id="centralLogo" class="mx-auto" src="img/summaBrandOnly_White.png">
+                </a>
+                <div class="center-fix"></div>
+                <div class="hamburgerMenu align-middle">    
+                    <input type="checkbox" id="btn">
+
+                    <label class="menu" for="btn">
+                        <span class="top">
+                            <span class="inner"></span>
+                        </span>
+                        <span class="middle">
+                            <span class="inner"></span>
+                        </span>
+                        <span class="bottom">
+                            <span class="inner"></span>
+                        </span>
+                    </label>
+                </div>
+            </nav>
+        </div>
+        <!-- NAVBAR END -->
 
         <div class="sp"></div>
 
@@ -137,9 +131,6 @@
 
         <div class="sp"></div>
 
-        <div class="sp"></div>
-
-        <div class="sp"></div>
         <div class="container">
             <div class="mx-auto" style="width: 70%;">
                 <h1>Seu negócio, nosso compromisso</h1>
@@ -154,15 +145,19 @@
                     deserunt mollit anim id est laborum.</p>
             </div>
         </div>
+        <div class="text-center" style="margin-top: 15%;">
+            <a href="#theteam" id="arrow-link"><i id="arrow" class="fas fa-angle-down vert-move"
+                    style="font-size: 300%"></i></a>
+        </div>
     </div>
     <!-- MAIN PARALLAX END -->
 
     <!-- THE TEAM -->
-    <div class="container text-center">
+    <div id="theteam" class="container text-center">
         <div class="row">
             <h2 class="title mx-auto">O Time</h2>
         </div>
-        <div class="row dist">
+        <div class="row">
             <div class="col">
                 <div class="card mx-auto text-white bg-dark mb-3" style="width: 18rem;">
                     <img src="img/rafael.jpg" class="card-img-top rounded" alt="Rafael Machado">
@@ -203,7 +198,7 @@
     <!-- THE TEAM END -->
 
     <!-- TYPING -->
-    <div class="parallaxTyping">
+    <div id="typing" class="parallaxTyping">
         <div class="container text-center typeBox">
             <div class="typing"></div>
         </div>
@@ -211,11 +206,11 @@
     <!-- TYPING END -->
 
     <!-- WHAT WE DO -->
-    <div class="container">
+    <div id="whatwedo" class="container">
         <div class="row">
             <h2 class="title mx-auto">O Que Fazemos</h2>
         </div>
-        <div class="row dist">
+        <div class="row">
             <ul class="list-unstyled">
                 <li class="media">
                     <img src="..." class="mr-3" alt="...">
