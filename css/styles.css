@@ -3,6 +3,11 @@
     overflow: hidden; /* Hide scrollbars */
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 .page {
     margin-top: 15%;
 }
