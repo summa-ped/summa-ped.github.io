@@ -3,12 +3,10 @@ time2 = time2 * 10
 time3 = time3 * 10 */
 body {
     background: #000;
-    display: -webkit-box;
-    display: flex;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
   }
   #btn {
     display: none;
