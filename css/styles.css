@@ -64,6 +64,10 @@
     font-weight: 300;
 }
 
+.title {
+    margin-top: 5%;
+}
+
 /*
 .summa {
     font-family: 'Agency FB', arial;
