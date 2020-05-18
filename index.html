@@ -28,6 +28,28 @@
             background-size: cover;
         }
 
+        .parallaxTyping {
+            /* The image used */
+            background-image: url('img/bg1.jpg');
+            width: 100%;
+            /* Set a specific height */
+            height: auto;
+            position: relative;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .typeBox {
+            display: inline;
+        }
+
+        .typing {
+            font-size: xx-large;
+        }
+
         .sp {
             height: 50px;
             background-color: transparent;
@@ -35,7 +57,7 @@
 
         /* width */
         ::-webkit-scrollbar {
-          width: 4px;
+            width: 4px;
         }
 
         /* Track */
@@ -45,15 +67,14 @@
 
         /* Handle */
         ::-webkit-scrollbar-thumb {
-          background: rgb(20, 20, 20); 
+            background: rgb(20, 20, 20);
         }
 
         /* Handle on hover */
         ::-webkit-scrollbar-thumb:hover {
-          background: rgba(37, 37, 37, 0.582);
+            background: rgba(37, 37, 37, 0.582);
         }
-
-        </style>
+    </style>
 </head>
 
 <body class="font-light">
@@ -113,21 +134,28 @@
         </div>
 
     </div>
-    <div class="container text-center">
-        <div class="row">
-            <h2 class="title mx-auto">O Time</h2>
-        </div>
-        <div class="row" style="margin-top: 3%; margin-bottom: 3%;">
-            <div class="col">
-                <div class="card mx-auto text-white bg-dark mb-3" style="width: 18rem;">
-                    <img src="img/rafael.jpg" class="card-img-top rounded" alt="Rafael Machado">
-                    <div class="card-body">
-                        <h5 class="card-title">Rafael Machado</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="container text-center typeBox">
+        <div class="typing"></div>
+    </div>
+    <div class="parallaxTyping">
+        <div class="container text-center">
+            <div class="row">
+                <h2 class="title mx-auto">O Time</h2>
+            </div>
+            <div class="row" style="margin-top: 3%; margin-bottom: 3%;">
+                <div class="col">
+                    <div class="card mx-auto text-white bg-dark mb-3" style="width: 18rem;">
+                        <img src="img/rafael.jpg" class="card-img-top rounded" alt="Rafael Machado">
+                        <div class="card-body">
+                            <h5 class="card-title">Rafael Machado</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
+<<<<<<< HEAD
             </div>
             <div class="col">
                 <div class="card mx-auto text-white bg-dark mb-3" style="width: 18rem;">
@@ -137,14 +165,29 @@
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                             card's content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
+=======
+                <div class="col">
+                    <div class="card mx-auto text-white bg-dark mb-3" style="width: 18rem;">
+                        <img src="img/bruno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bruno Vilela</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+>>>>>>> 5293736d74ee09362413e6f9099431eb22ec06c9
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row text-center title">
-            <a href="#" class="mx-auto" style="text-decoration: none; color: white;"><h4>A Empresa</h4></a>
+            <div class="row text-center title">
+                <a href="#" class="mx-auto" style="text-decoration: none; color: white;">
+                    <h4>A Empresa</h4>
+                </a>
+            </div>
         </div>
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -156,4 +199,5 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="js/typing.js"></script>
 </body>
