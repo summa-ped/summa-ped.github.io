@@ -8,4 +8,4 @@ function changeLang(lang){
     }
 }
 
-$(".parallax").height(window.screen.availHeight);
+$(".parallax").height($(window).height());
