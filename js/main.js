@@ -9,7 +9,7 @@ function changeLang(lang){
 }
 
 $(".parallax").height($(window).height());
-
+$(".menuHid").height($(window).height());
 function openContact(){
     $("#openContact").fadeOut("slow", function () {
         $("#sendMsg").fadeIn();
@@ -32,3 +32,7 @@ function sendMsg(){
         openInNewTab("https://web.whatsapp.com/send?text="+$("#txtArea").val()+"&phone=5535999144165");
     }
 }
+
+$("#btn").click(function (){
+    $(".menuHid").fadeToggle("slow");
+});
