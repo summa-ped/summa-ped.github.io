@@ -65,13 +65,20 @@ a{
 
 .font-light {
     color: lightgray !important;
-    font-family: 'Fira Code', sans-serif !important;
+    font-family: 'Fira Code', sans-serif;
     font-weight: 300;
 }
 
 .title {
     margin-top: 8%;
     margin-bottom: 8%;
+    font-family: 'Agency FB', 'Fira Code', sans-serif !important;
+    font-weight: 300;
+}
+
+.agency {
+    font-family: 'Agency FB', 'Fira Code', sans-serif !important;
+    font-weight: 300;
 }
 
 /* Arrow Up and Down Movement INIT*/
