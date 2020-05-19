@@ -88,6 +88,13 @@
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(37, 37, 37, 0.582);
         }
+        .form-control:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #5252529f;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(46, 46, 46, 0.25) !important; 
+        }
     </style>
 </head>
 
@@ -129,7 +136,7 @@
 
         <div class="sp"></div>
 
-        <div class="container" style="border-radius: 1%; padding: 3%; background-color: rgba(61, 79, 80, 0.349);">
+        <div class="container" style="border-radius: 1%; padding: 3%; background-color: rgba(0, 0, 0, 0.582);">
             <div class="row">
                 <div class="mx-auto" id="hOne" style="width: 70%; ">
                     <h1>Seu negócio, nosso compromisso</h1>
@@ -143,12 +150,15 @@
                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                         deserunt mollit anim id est laborum.</p>
                     <button id="openContact" onclick="openContact()" class="btn btn-outline-light">Conheça!</button>
-                    <textarea class="form-control" id="txtArea" style="background-color: rgba(48, 41, 41, 0.342); color: #f1f1f1; display: none;"> </textarea>
+                    <textarea class="form-control" id="txtArea" style="background-color: rgba(48, 41, 41, 0.342); color: #f1f1f1; display: none;" placeholder="Conte como podemos ajudar seu negócio!" autofocus> </textarea>
                     <button onclick="sendMsg()" id="sendMsg" class="btn btn-outline-light" style="margin-top: 5px; display: none;">Enviar</button>
                 </div>
             </div>
         </div>
-        <div class="text-center" style="margin-top: 15%;">
+        <div class="sp"></div>
+        <div class="sp"></div>
+        <div class="sp"></div>
+        <div class="text-center">
             <a href="#theteam" id="arrow-link"><i id="arrow" class="fas fa-angle-down vert-move"
                     style="font-size: 300%"></i></a>
         </div>
