@@ -50,6 +50,7 @@ $(document).ready(function () {
     $('#tech').slick({
         dots: false,
         arrows: false,
+        swipeToSlide: true,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
