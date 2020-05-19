@@ -49,11 +49,24 @@
 
         .typing {
             font-size: xx-large;
+            text-shadow: 2px 2px 8px #000;
         }
 
         .sp {
             height: 50px;
             background-color: transparent;
+        }
+
+        .git:hover {
+            color: #6cc644;
+        }
+
+        .in:hover {
+            color: #0077b5;
+        }
+
+        #empresa-link:hover {
+            color: white;
         }
 
         /* width */
@@ -79,8 +92,38 @@
 </head>
 
 <body class="font-light">
-    <div class="parallax">
-        <div class="sp"></div>
+    <!-- MAIN PARALLAX -->
+    <div id="mainpage" class="parallax">
+        <!-- NAVBAR -->
+        <div id="navbar" class="container-fluid">
+            <nav class="navbar text-center">
+                <div class="btn-group" role="group">
+                    <button id="pt" type="button" onclick="changeLang(0)" class="btn btn-language active">pt</button>
+                    <span style="padding-top: 6px; padding-bottom: 6px;">/</span>
+                    <button id="en" type="button" onclick="changeLang(1)" class="btn btn-language">en</button>
+                </div>
+                <a href="#" class="navbar-brand mx-auto" style="width: 10%;">
+                    <img id="centralLogo" class="mx-auto" src="img/summaBrandOnly_White.png">
+                </a>
+                <div class="center-fix"></div>
+                <div class="hamburgerMenu align-middle">    
+                    <input type="checkbox" id="btn">
+
+                    <label class="menu" for="btn">
+                        <span class="top">
+                            <span class="inner"></span>
+                        </span>
+                        <span class="middle">
+                            <span class="inner"></span>
+                        </span>
+                        <span class="bottom">
+                            <span class="inner"></span>
+                        </span>
+                    </label>
+                </div>
+            </nav>
+        </div>
+        <!-- NAVBAR END -->
 
         <div class="sp"></div>
 
@@ -88,99 +131,120 @@
 
         <div class="sp"></div>
 
-        <div class="sp"></div>
-
-        <div class="sp"></div>
         <div class="container">
-            
-            <div class="mx-auto" style="width: 500px;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+            <div class="mx-auto" style="width: 70%;">
+                <h1>Seu negócio, nosso compromisso</h1>
+                <div style="border-bottom: 2px solid; width: 80%; margin-bottom: 3%; margin-top: 3%;"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
             </div>
         </div>
-        <div style="background-color: rgba(black, black, black, 0.2);">
-            <div id="navbar" class="container-fluid">
-                <nav class="navbar">
-                    <div>
-                        <div class="btn-group" role="group">
-                            <button id="pt" type="button" onclick="changeLang(0)" class="btn btn-language">pt</button>
-                            <button id="en" type="button" onclick="changeLang(1)"
-                                class="btn btn-language active">en</button>
-                        </div>
-                    </div>
-                    <div class="mx-auto">
-                        <div>
-                            <img id="centralLogo" src="img/summaBrandOnly_White.png">
-                        </div>
-                    </div>
-                    <div class="hamburgerMenu">
-                        <input type="checkbox" id="btn">
-
-                        <label class="menu" for="btn">
-                            <span class="top">
-                                <span class="inner"></span>
-                            </span>
-                            <span class="middle">
-                                <span class="inner"></span>
-                            </span>
-                            <span class="bottom">
-                                <span class="inner"></span>
-                            </span>
-                        </label>
-                    </div>
-                </nav>
-            </div>
+        <div class="text-center" style="margin-top: 15%;">
+            <a href="#theteam" id="arrow-link"><i id="arrow" class="fas fa-angle-down vert-move"
+                    style="font-size: 300%"></i></a>
         </div>
+    </div>
+    <!-- MAIN PARALLAX END -->
 
-    </div>
-    <div class="container text-center typeBox">
-        <div class="typing"></div>
-    </div>
-    <div class="parallaxTyping">
-        <div class="container text-center">
-            <div class="row">
-                <h2 class="title mx-auto">O Time</h2>
-            </div>
-            <div class="row" style="margin-top: 3%; margin-bottom: 3%;">
-                <div class="col">
-                    <div class="card mx-auto text-white bg-dark mb-3" style="width: 18rem;">
-                        <img src="img/rafael.jpg" class="card-img-top rounded" alt="Rafael Machado">
-                        <div class="card-body">
-                            <h5 class="card-title">Rafael Machado</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the
-                                card's content.</p>
-                            <i class="fab fa-github" style="margin-right: 5%;"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                        </div>
+    <!-- THE TEAM -->
+    <div id="theteam" class="container text-center">
+        <div class="row">
+            <h2 class="title mx-auto">O Time</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card mx-auto text-white bg-dark mb-3" style="width: 18rem;">
+                    <img src="img/rafael.jpg" class="card-img-top rounded" alt="Rafael Machado">
+                    <div class="card-body">
+                        <h5 class="card-title">Rafael Machado</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                        <a href="https://github.com/machadorafa" class="git"><i class="fab fa-github"
+                                style="margin-right: 5%;"></i></a>
+                        <a href="https://www.linkedin.com/in/machadorafa/" class="in"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-
+            </div>
+            <div class="col">
                 <div class="card mx-auto text-white bg-dark mb-3" style="width: 18rem;">
                     <img src="img/bruno.jpg" class="card-img-top rounded" alt="Bruno Vilela">
                     <div class="card-body">
                         <h5 class="card-title">Bruno Vilela</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
                             card's content.</p>
-                        
-                        <i class="fab fa-github" style="margin-right: 5%;"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                        </div>
-                        </div>
-            </div>
-            <div class="col">
-            </div>
-            <div class="row text-center title">
-                <a href="#" class="mx-auto" style="text-decoration: none; color: white;">
-                    <h4>A Empresa</h4>
-                </a>
+                        <a href="https://github.com/vilelabruno" class="git"><i class="fab fa-github git"
+                                style="margin-right: 5%;"></i></a>
+                        <a href="https://www.linkedin.com/in/vilelabruno00/" class="in"><i
+                                class="fab fa-linkedin-in in"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="row text-center title">
+            <a id="empresa-link" href="#" class="mx-auto">
+                <h4>A Empresa</h4>
+            </a>
+        </div>
     </div>
+    <!-- THE TEAM END -->
 
+    <!-- TYPING -->
+    <div id="typing" class="parallaxTyping">
+        <div class="container text-center typeBox">
+            <div class="typing"></div>
+        </div>
+    </div>
+    <!-- TYPING END -->
+
+    <!-- WHAT WE DO -->
+    <div id="whatwedo" class="container">
+        <div class="row">
+            <h2 class="title mx-auto">O Que Fazemos</h2>
+        </div>
+        <div class="row">
+            <ul class="list-unstyled">
+                <li class="media">
+                    <img src="..." class="mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </li>
+                <li class="media my-4">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                    <img src="..." class="mr-3" alt="...">
+                </li>
+                <li class="media">
+                    <img src="..." class="mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- WHAT WE DO END -->
+
+    <div style="height: 1000px;"></div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
