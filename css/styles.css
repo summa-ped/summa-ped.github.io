@@ -64,8 +64,8 @@ a{
 }
 
 .font-light {
-    color: lightgray;
-    font-family: 'Fira Code', sans-serif;
+    color: lightgray !important;
+    font-family: 'Fira Code', sans-serif !important;
     font-weight: 300;
 }
 
