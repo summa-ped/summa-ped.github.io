@@ -149,6 +149,7 @@ body {
 #centralLogo:hover{
   transform: scale(1.1);
 }
+
 #centralLogo{
   width: 100%;
   margin: 0px!important;

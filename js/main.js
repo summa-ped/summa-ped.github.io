@@ -36,6 +36,7 @@ function sendMsg() {
 
 $("#btn").click(function () {
     $(".menuHid").fadeToggle("slow", function () {
+     
         $("#li1").fadeToggle("slow", function () {
             $("#li2").fadeToggle("slow", function () {
                 $("#li3").fadeToggle("slow", function () {
