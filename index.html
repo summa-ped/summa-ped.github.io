@@ -95,11 +95,28 @@
             font-size: 80px;
             vertical-align: middle;
         }
+
+        .media {
+            opacity: 0;
+            transition: transform 0.5s ease-in;
+            padding: 1.2%;
+            border-radius: 3px;
+        }
         .media-l {
-            padding-right: 50%;
+            margin-right: 45%;
+            
         }
         .media-r {
-            padding-left: 50%;
+            margin-left: 45%;
+        }
+
+        .card {
+            opacity: 0;
+            transition: transform 0.5s ease-in;
+        }
+
+        .bg-opac {
+            background-color: rgba(52, 58, 64, 0.5);
         }
 
         /* width */
@@ -143,7 +160,7 @@
             <ul class="list-group" style="font-size: xx-large;">
                 <li id="li1" style="display: none;" class="list-group-item">Home</li>
                 <li id="li2" style="display: none;" class="list-group-item">Nossas Soluções</li>
-                <li id="li3" style="display: none;" class="list-group-item">A empresa</li>
+                <li id="li3" style="display: none;" class="list-group-item">A Empresa</li>
                 <li id="li4" style="display: none;" class="list-group-item">Blog</li>
               </ul>
         </div>
@@ -181,7 +198,7 @@
 
         <div class="sp"></div>
 
-        <div class="container" style="border-radius: 5px; padding: 3%; background-color: rgba(0, 0, 0, 0.75);">
+        <div class="container" style="border-radius: 5px; padding: 3%; background-color: rgba(0, 0, 0, 0.75 );">
             <div class="row">
                 <div class="mx-auto" id="hOne" style="width: 70%; ">
                     <h1 class="agency">Seu negócio, nossas soluções</h1>
@@ -217,7 +234,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="card mx-auto text-white bg-dark mb-3" style="width: 18rem;">
+                <div class="card card-l mx-auto text-white bg-opac mb-3" style="width: 18rem;">
                     <img src="img/rafael.jpg" class="card-img-top rounded" alt="Rafael Machado">
                     <div class="card-body">
                         <h5 class="card-title">Rafael Machado</h5>
@@ -232,7 +249,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card mx-auto text-white bg-dark mb-3" style="width: 18rem;">
+                <div class="card card-r mx-auto text-white bg-opac mb-3" style="width: 18rem;">
                     <img src="img/bruno.jpg" class="card-img-top rounded" alt="Bruno Vilela">
                     <div class="card-body">
                         <h5 class="card-title">Bruno Vilela</h5>
@@ -270,9 +287,9 @@
         </div>
         <div class="row">
             <ul class="list-unstyled">
-                <li class="media">
+                <li class="media media-l bg-opac">
                     <i class="fas fa-chart-line do-icon mr-3"></i>
-                    <div class="media-body media-l">
+                    <div class="media-body">
                         <h5 class="mt-0 mb-1">Otimização</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                         purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
@@ -280,8 +297,8 @@
                     </div>
                 </li>
                 
-                <li class="media my-4">
-                    <div class="media-body media-r text-right">
+                <li class="media media-r bg-opac my-5">
+                    <div class="media-body text-right">
                         <h5 class="mt-0 mb-1">Tomada de Decisão</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                         purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
@@ -290,9 +307,9 @@
                     <i class="fas fa-balance-scale-right do-icon ml-3"></i>
                 </li>
                 
-                <li class="media">
+                <li class="media media-l bg-opac">
                     <i class="far fa-smile-beam do-icon mr-3"></i>
-                    <div class="media-body media-l">
+                    <div class="media-body">
                         <h5 class="mt-0 mb-1">Análise de Sentimentos</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                         purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi

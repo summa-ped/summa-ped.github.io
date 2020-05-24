@@ -36,7 +36,7 @@ function sendMsg() {
 
 $("#btn").click(function () {
     $(".menuHid").fadeToggle("slow", function () {
-     
+
         $("#li1").fadeToggle("slow", function () {
             $("#li2").fadeToggle("slow", function () {
                 $("#li3").fadeToggle("slow", function () {
@@ -48,6 +48,7 @@ $("#btn").click(function () {
 });
 
 $(document).ready(function () {
+
     $('#tech').slick({
         dots: false,
         arrows: false,
@@ -85,5 +86,71 @@ $(document).ready(function () {
             // settings: "unslick"
             // instead of a settings object
         ]
+    });
+
+    var mediaR = document.getElementsByClassName('media-r');
+    var mediaL = document.getElementsByClassName('media-l');
+    for (i = 0; i < 1; i++) {
+        mediaR[i].style.transform = 'translate(15%, 0px)';
+    }
+    for (i = 0; i < 2; i++) {
+        mediaL[i].style.transform = 'translate(-15%, 0px)';
+    }
+
+    var cardR = document.querySelector('.card-r');
+    var cardL = document.querySelector('.card-l');
+    cardR.style.transform = 'translate(15%, 0px)';
+    cardL.style.transform = 'translate(-15%, 0px)';
+
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll(function () {
+
+        /* Check the location of each desired element */
+        $('.media').each(function (i) {
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it in */
+            if (bottom_of_window > bottom_of_object) {
+
+                $(this).animate({ 'opacity': '1' }, 500);
+                this.style.transform = 'none';
+                this.style.transform = 'none';
+            }
+
+        });
+
+        /* Check the location of each desired element */
+        $('.card').each(function (i) {
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it in */
+            if (bottom_of_window > bottom_of_object) {
+
+                $(this).animate({ 'opacity': '1' }, 500);
+                this.style.transform = 'none';
+                this.style.transform = 'none';
+            }
+
+        });
+
+        /* Check the location of each desired element */
+        $('.title').each(function (i) {
+
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it in */
+            if (bottom_of_window > bottom_of_object) {
+
+                $(this).animate({ 'opacity': '1' }, 500);
+            }
+
+        });
+
     });
 });
