@@ -1,3 +1,7 @@
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function changeLang(lang) {
     if (lang == 0) {
         $("#en").removeClass("active");
@@ -88,20 +92,11 @@ $(document).ready(function () {
         ]
     });
 
-    var mediaR = document.getElementsByClassName('media-r');
-    var mediaL = document.getElementsByClassName('media-l');
-    for (i = 0; i < 1; i++) {
-        mediaR[i].style.transform = 'translate(15%, 0px)';
-    }
-    for (i = 0; i < 2; i++) {
-        mediaL[i].style.transform = 'translate(-15%, 0px)';
-    }
 
     var cardR = document.querySelector('.card-r');
     var cardL = document.querySelector('.card-l');
     cardR.style.transform = 'translate(15%, 0px)';
     cardL.style.transform = 'translate(-15%, 0px)';
-
 
     /* Every time the window is scrolled ... */
     $(window).scroll(function () {
@@ -114,10 +109,18 @@ $(document).ready(function () {
 
             /* If the object is completely visible in the window, fade it in */
             if (bottom_of_window > bottom_of_object) {
-
-                $(this).animate({ 'opacity': '1' }, 500);
+                this.style.opacity = '1';
                 this.style.transform = 'none';
-                this.style.transform = 'none';
+            } else {
+                if (this.classList.contains('media-r')) {
+                    this.style.opacity = '0';
+                    this.style.transform = 'translate(15%, 0px)';
+                    
+                } else {
+                    this.style.opacity = '0';
+                    this.style.transform = 'translate(-15%, 0px)';
+                    
+                }
             }
 
         });
@@ -125,15 +128,23 @@ $(document).ready(function () {
         /* Check the location of each desired element */
         $('.card').each(function (i) {
 
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_object = $(this).offset().top + ($(this).outerHeight() / 2);
             var bottom_of_window = $(window).scrollTop() + $(window).height();
 
             /* If the object is completely visible in the window, fade it in */
             if (bottom_of_window > bottom_of_object) {
-
-                $(this).animate({ 'opacity': '1' }, 500);
+                this.style.opacity = '1';
                 this.style.transform = 'none';
-                this.style.transform = 'none';
+            } else {
+                if (this.classList.contains('card-r')) {
+                    this.style.opacity = '0';
+                    this.style.transform = 'translate(15%, 0px)';
+                    
+                } else {
+                    this.style.opacity = '0';
+                    this.style.transform = 'translate(-15%, 0px)';
+                    
+                }
             }
 
         });
@@ -146,8 +157,9 @@ $(document).ready(function () {
 
             /* If the object is completely visible in the window, fade it in */
             if (bottom_of_window > bottom_of_object) {
-
-                $(this).animate({ 'opacity': '1' }, 500);
+                this.style.opacity = '1';
+            } else {
+                this.style.opacity = '0';
             }
 
         });
