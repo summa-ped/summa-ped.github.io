@@ -8,6 +8,10 @@ a{
     color: white;
 }
 
+a:hover {
+    color: white;
+}
+
 .page {
     margin-top: 15%;
 }
@@ -120,6 +124,7 @@ a{
     width: 70%;
     padding: 10%;
     padding-top: 5%;
+    padding-bottom: 20%;
 }
 
 .titleFooter {
