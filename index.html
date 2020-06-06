@@ -60,110 +60,6 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-
-        .typeBox {
-            display: inline;
-        }
-
-        .typing {
-            font-size: xx-large;
-            text-shadow: 2px 2px 8px #000;
-        }
-
-        .sp {
-            height: 50px;
-            background-color: transparent;
-        }
-
-        .git:hover {
-            color: #6e5494;
-        }
-
-        .in:hover {
-            color: #0077b5;
-        }
-
-        .twit:hover {
-            color: #1da1f2;
-        }
-
-        .med:hover {
-            color: #00ab6c;
-        }
-
-        #empresa-link:hover {
-            color: white;
-        }
-
-        .shw {
-            text-shadow: 0px 0px 8px #000;
-        }
-
-        .do-icon {
-            font-size: 80px;
-            vertical-align: middle;
-        }
-
-        .media {
-            opacity: 0;
-            transition: all 0.5s ease-in;
-            padding: 2%;
-            border-radius: 3px;
-        }
-
-        .media-l {
-            margin-right: 45%;
-
-        }
-
-        .media-r {
-            margin-left: 45%;
-        }
-
-        .card {
-            opacity: 0;
-            transition: all 0.5s ease-in;
-        }
-
-        .bg-opac {
-            /*background-color: rgba(52, 58, 64, 0.5);*/
-            background-color: #000;
-            background-image: url('img/summaBackground.png');
-            background-position: center;
-            border-radius: 0.5em;
-        }
-
-        /* width */
-        ::-webkit-scrollbar {
-            width: 4px;
-        }
-
-        /* Track */
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            background: rgb(20, 20, 20);
-        }
-
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-            background: rgba(37, 37, 37, 0.582);
-        }
-
-        .form-control:focus {
-            color: #495057;
-            background-color: #fff;
-            border-color: #5252529f;
-            outline: 0;
-            box-shadow: 0 0 0 0.2rem rgba(46, 46, 46, 0.25) !important;
-        }
-
-        .itensFooter {
-            margin-top: 5%;
-        }
     </style>
 </head>
 
@@ -176,13 +72,15 @@
             <div class="sp"></div>
 
             <ul class="list-group menu-items" style="font-size: xx-large;">
-                <li id="li1" style="display: none;" class="list-group-item"><a href="https://summard.github.io">Home</a></li>
+                <li id="li1" style="display: none;" class="list-group-item"><a href="https://summard.github.io">Home</a>
+                </li>
                 <li id="li4" style="display: none;" class="list-group-item"><a href="company.html">A Empresa</a></li>
                 <li id="li5" style="display: none;" class="list-group-item"><a href="team.html">O Time</a></li>
                 <li id="li3" style="display: none;" class="list-group-item"><a href="">Serviços</a></li>
                 <li id="li2" style="display: none;" class="list-group-item"><a href="">Soluções</a></li>
                 <li id="li6" style="display: none;" class="list-group-item"><a href="">Contato</a></li>
-                <li id="li7" style="display: none;" class="list-group-item"><a href="https://medium.com/@summard">Blog</a></li>
+                <li id="li7" style="display: none;" class="list-group-item"><a
+                        href="https://medium.com/@summard">Blog</a></li>
             </ul>
         </div>
         <div id="navbar" class="container-fluid">
@@ -227,14 +125,18 @@
             <div class="row">
                 <div class="mx-auto" id="hOne" style="width: 70%; ">
                     <h1 class="agency white">Seu negócio, nossas soluções</h1>
-                    <div style="border-bottom: 2px solid; width: 80%; margin-bottom: 3%; margin-top: 3%;" class="white"></div>
+                    <div style="border-bottom: 2px solid; width: 80%; margin-bottom: 3%; margin-top: 3%;" class="white">
+                    </div>
                     <p>Somos uma Start Up que preza pelo melhor do seu empreendimento. Aplicamos algoritmos de
-                        <b style="font-weight: 800!important;">Otimização</b> e <b style="font-weight: 800!important;">Inteligência Artificial</b> 
-                        a dados relevantes ao seu problema e entregamos a perfeita estratégia de negócio para alavancar 
-                        sua empresa no mercado. Atuamos no Brasil e internacionalmente nas áreas de 
-                        <b style="font-weight: 800!important;">Pesquisa e Desenvolvimento</b> e servimos seu negócio com dedicação.
+                        <b style="font-weight: 800!important;">Otimização</b> e <b
+                            style="font-weight: 800!important;">Inteligência Artificial</b>
+                        a dados relevantes ao seu problema e entregamos a perfeita estratégia de negócio para alavancar
+                        sua empresa no mercado. Atuamos no Brasil e internacionalmente nas áreas de
+                        <b style="font-weight: 800!important;">Pesquisa e Desenvolvimento</b> e servimos seu negócio com
+                        dedicação.
                     </p>
-                    <button id="openContact" onclick="openContact()" class="btn btn-outline-light white">Conheça!</button>
+                    <button id="openContact" onclick="openContact()"
+                        class="btn btn-outline-light white">Conheça!</button>
                     <textarea class="form-control" id="txtArea"
                         style="background-color: rgba(48, 41, 41, 0.342); color: #f1f1f1; display: none; max-height: 4em;"
                         placeholder="Conte como podemos ajudar seu negócio!" value="" autofocus></textarea>
@@ -247,8 +149,8 @@
         <div class="sp"></div>
         <div class="sp"></div>
         <div class="text-center">
-            <a href="javascript:arrowScroll();" id="arrow-link" class="white"><i id="arrow" class="fas fa-angle-down vert-move shw"
-                    style="font-size: 300%"></i></a>
+            <a href="javascript:arrowScroll();" id="arrow-link" class="white"><i id="arrow"
+                    class="fas fa-angle-down vert-move shw" style="font-size: 300%"></i></a>
         </div>
     </div>
     <!-- MAIN PARALLAX END -->
@@ -263,7 +165,9 @@
                 <div class="card card-l mx-auto bg-opac mb-3" style="width: 20rem;">
                     <a href=""><img src="img/rafael.jpg" class="card-img-top rounded" alt="Rafael Machado"></a>
                     <div class="card-body">
-                        <a href=""><h5 class="card-title social white">Rafael Machado</h5></a>
+                        <a href="">
+                            <h5 class="card-title social white">Rafael Machado</h5>
+                        </a>
                         <p class="card-text">Pesquisador e Desenvolvedor.<br>
                             Bacharel em Ciência da Computação pela Universidade Federal de Alfenas.</p>
                         <a href="https://github.com/machadorafa" class="social git white"><i class="fab fa-github"
@@ -277,7 +181,9 @@
                 <div class="card card-r mx-auto bg-opac mb-3" style="width: 20rem;">
                     <a href=""><img src="img/bruno.jpg" class="card-img-top rounded" alt="Bruno Vilela"></a>
                     <div class="card-body">
-                        <a href=""><h5 class="card-title social white">Bruno Vilela</h5></a>
+                        <a href="">
+                            <h5 class="card-title social white">Bruno Vilela</h5>
+                        </a>
                         <p class="card-text">Pesquisador e Desenvolvedor.<br>
                             Bacharel em Ciência da Computação pela Universidade Federal de Alfenas.</p>
                         <a href="https://github.com/vilelabruno" class="social git white"><i class="fab fa-github git"
@@ -314,15 +220,19 @@
                 <li class="media media-l bg-opac">
                     <a href=""><i class="fas fa-chart-line do-icon mr-4 white"></i></a>
                     <div class="media-body">
-                        <a href=""><h5 class="mt-0 mb-2 white">Otimização</h5></a>
-                        Estudamos cada problema e suas variáveis e aplicamos algoritmos que maximizam os lucros 
+                        <a href="">
+                            <h5 class="mt-0 mb-2 white">Otimização</h5>
+                        </a>
+                        Estudamos cada problema e suas variáveis e aplicamos algoritmos que maximizam os lucros
                         e minimizam os gastos do seu negócio de forma ótima.
                     </div>
                 </li>
 
                 <li class="media media-r bg-opac my-5">
                     <div class="media-body text-right">
-                        <a href=""><h5 class="mt-0 mb-2 white">Tomada de Decisão</h5></a>
+                        <a href="">
+                            <h5 class="mt-0 mb-2 white">Tomada de Decisão</h5>
+                        </a>
                         Analisamos os dados de sua empresa e utilizamos ferramentas de inteligência artificial
                         para decidir o melhor caminho que seu negócio pode tomar para crescer no mercado.
                     </div>
@@ -332,7 +242,9 @@
                 <li class="media media-l bg-opac">
                     <a href=""><i class="far fa-smile-beam do-icon mr-4 white"></i></a>
                     <div class="media-body">
-                        <a href=""><h5 class="mt-0 mb-2 white">Análise de Sentimentos</h5></a>
+                        <a href="">
+                            <h5 class="mt-0 mb-2 white">Análise de Sentimentos</h5>
+                        </a>
                         Usamos linguística computacional para quantificar e estudar informações qualitativas a fim
                         de abstrair notícias relevantes ao seu negócio e auxiliar tomadas de decisão.
                     </div>
@@ -340,7 +252,9 @@
 
                 <li class="media media-r bg-opac my-5">
                     <div class="media-body text-right">
-                        <a href=""><h5 class="mt-0 mb-2 white">Internet das Coisas</h5></a>
+                        <a href="">
+                            <h5 class="mt-0 mb-2 white">Internet das Coisas</h5>
+                        </a>
                         Integramos diferentes sistemas e dispositivos à internet para um melhor sensoriamento e
                         intercomunicação de dados para auxiliar tomadas de decisão.
                     </div>
@@ -420,7 +334,8 @@
                 </div>
                 <div class="col">
                     <div class="titleFooter">Blog</div>
-                    <div class="itensFooter"><a href="https://medium.com/@summared/hello-world-27c147f76f69">Hello World</a></div>
+                    <div class="itensFooter"><a href="https://medium.com/@summared/hello-world-27c147f76f69">Hello
+                            World</a></div>
                 </div>
                 <div class="col">
                     <div class="titleFooter">Sobre</div>
@@ -436,7 +351,8 @@
                             <a href="https://twitter.com/summarad" class="twit"><i class="fab fa-twitter"></i></a>
                         </div>
                         <div class="col">
-                            <a href="https://www.linkedin.com/company/summard" class="in"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.linkedin.com/company/summard" class="in"><i
+                                    class="fab fa-linkedin-in"></i></a>
                         </div>
                         <div class="col">
                             <a href="https://medium.com/@summard" class="med"><i class="fab fa-medium-m"></i></a>
@@ -449,7 +365,7 @@
             </div>
 
             <div class="copyright text-center">
-                <p>Copyright <i class="far fa-copyright"></i> Todos os direitos reservados 
+                <p>Copyright <i class="far fa-copyright"></i> Todos os direitos reservados
                     <b style="font-weight: 800!important;">Summa P&D</b> 2020</p>
             </div>
         </div>

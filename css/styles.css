@@ -153,6 +153,110 @@ a:hover {
     z-index: 10;
 }
 
+.typeBox {
+    display: inline;
+}
+
+.typing {
+    font-size: xx-large;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.sp {
+    height: 50px;
+    background-color: transparent;
+}
+
+.git:hover {
+    color: #6e5494;
+}
+
+.in:hover {
+    color: #0077b5;
+}
+
+.twit:hover {
+    color: #1da1f2;
+}
+
+.med:hover {
+    color: #00ab6c;
+}
+
+#empresa-link:hover {
+    color: white;
+}
+
+.shw {
+    text-shadow: 0px 0px 8px #000;
+}
+
+.do-icon {
+    font-size: 80px;
+    vertical-align: middle;
+}
+
+.media {
+    opacity: 0;
+    transition: all 0.5s ease-in;
+    padding: 2%;
+    border-radius: 3px;
+}
+
+.media-l {
+    margin-right: 45%;
+
+}
+
+.media-r {
+    margin-left: 45%;
+}
+
+.card {
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.bg-opac {
+    /*background-color: rgba(52, 58, 64, 0.5);*/
+    background-color: #000;
+    background-image: url('img/summaBackground.png');
+    background-position: center;
+    border-radius: 0.5em;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(20, 20, 20);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(37, 37, 37, 0.582);
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #5252529f;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(46, 46, 46, 0.25) !important;
+}
+
+.itensFooter {
+    margin-top: 5%;
+}
+
 /*
 .summa {
     font-family: 'Agency FB', arial;
