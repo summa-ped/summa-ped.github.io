@@ -149,6 +149,10 @@ a:hover {
     color: white;
 }
 
+.menu-items > li {
+    z-index: 10;
+}
+
 /*
 .summa {
     font-family: 'Agency FB', arial;
