@@ -43,6 +43,12 @@ $("#btn").click(function () {
     });
 });
 
+function arrowScroll() {
+    document.querySelector('#theteam').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
 $(document).ready(function () {
 
     $('#tech').slick({
@@ -107,11 +113,11 @@ $(document).ready(function () {
                 if (this.classList.contains('media-r')) {
                     this.style.opacity = '0';
                     this.style.transform = 'translate(15%, 0px)';
-                    
+
                 } else {
                     this.style.opacity = '0';
                     this.style.transform = 'translate(-15%, 0px)';
-                    
+
                 }
             }
 
@@ -131,11 +137,11 @@ $(document).ready(function () {
                 if (this.classList.contains('card-r')) {
                     this.style.opacity = '0';
                     this.style.transform = 'translate(15%, 0px)';
-                    
+
                 } else {
                     this.style.opacity = '0';
                     this.style.transform = 'translate(-15%, 0px)';
-                    
+
                 }
             }
 
