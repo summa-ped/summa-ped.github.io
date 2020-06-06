@@ -32,9 +32,9 @@ function sendMsg() {
         $("#openContact").fadeIn();
     });
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        openInNewTab("https://api.whatsapp.com/send?text=" + $("#txtArea").val() + "&phone=5535999144165");
+        openInNewTab("https://api.whatsapp.com/send?text=▪️" + $("#txtArea").val() + "&phone=5535999144165");
     } else {
-        openInNewTab("https://web.whatsapp.com/send?text=" + $("#txtArea").val() + "&phone=5535999144165");
+        openInNewTab("https://web.whatsapp.com/send?text=▪️" + $("#txtArea").val() + "&phone=5535999144165");
     }
 }
 
