@@ -64,12 +64,13 @@ a{
 }
 
 .font-light {
-    color: lightgray !important;
+    color: lightgray;
     font-family: 'Fira Code', sans-serif;
     font-weight: 300;
 }
 
 .title {
+    color: white;
     margin-top: 8%;
     margin-bottom: 8%;
     font-family: 'Agency FB', 'Fira Code', sans-serif !important;
@@ -116,13 +117,30 @@ a{
 }
 
 .social > div > img {
-    width: 60%;
+    width: 70%;
     padding: 10%;
     padding-top: 5%;
 }
 
 .titleFooter {
     font-weight: 800!important;
+}
+
+.itensFooter {
+    font-size: small;
+}
+
+.copyright {
+    font-size: 0.8em;
+    cursor: default;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.white {
+    color: white;
 }
 
 /*

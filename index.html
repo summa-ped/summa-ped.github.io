@@ -83,6 +83,10 @@
             color: #0077b5;
         }
 
+        .twit:hover {
+            color: #1da1f2;
+        }
+
         #empresa-link:hover {
             color: white;
         }
@@ -118,7 +122,11 @@
         }
 
         .bg-opac {
-            background-color: rgba(52, 58, 64, 0.5);
+            /*background-color: rgba(52, 58, 64, 0.5);*/
+            background-color: #000;
+            background-image: url('img/summaBackground.png');
+            background-position: center;
+            border-radius: 0.5em;
         }
 
         /* width */
@@ -212,8 +220,8 @@
         <div class="container" style="border-radius: 5px; padding: 3%; background-color: rgba(0, 0, 0, 0.75 );">
             <div class="row">
                 <div class="mx-auto" id="hOne" style="width: 70%; ">
-                    <h1 class="agency">Seu negócio, nossas soluções</h1>
-                    <div style="border-bottom: 2px solid; width: 80%; margin-bottom: 3%; margin-top: 3%;"></div>
+                    <h1 class="agency white">Seu negócio, nossas soluções</h1>
+                    <div style="border-bottom: 2px solid; width: 80%; margin-bottom: 3%; margin-top: 3%;" class="white"></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et
@@ -223,7 +231,7 @@
                         dolore eu
                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                         deserunt mollit anim id est laborum.</p>
-                    <button id="openContact" onclick="openContact()" class="btn btn-outline-light">Conheça!</button>
+                    <button id="openContact" onclick="openContact()" class="btn btn-outline-light white">Conheça!</button>
                     <textarea class="form-control" id="txtArea"
                         style="background-color: rgba(48, 41, 41, 0.342); color: #f1f1f1; display: none;"
                         placeholder="Conte como podemos ajudar seu negócio!" autofocus> </textarea>
@@ -249,29 +257,29 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="card card-l mx-auto text-white bg-opac mb-3" style="width: 20rem;">
+                <div class="card card-l mx-auto bg-opac mb-3" style="width: 20rem;">
                     <img src="img/rafael.jpg" class="card-img-top rounded" alt="Rafael Machado">
                     <div class="card-body">
-                        <h5 class="card-title">Rafael Machado</h5>
+                        <h5 class="card-title white">Rafael Machado</h5>
                         <p class="card-text">Pesquisador e Desenvolvedor.<br>Bacharel em Ciência da Computação pela Universidade Federal de Alfenas.</p>
-                        <a href="https://github.com/machadorafa" class="git"><i class="fab fa-github"
+                        <a href="https://github.com/machadorafa" class="git white"><i class="fab fa-github"
                                 style="margin-right: 5%;"></i></a>
-                        <a href="https://www.linkedin.com/in/machadorafa/" class="in"><i
+                        <a href="https://www.linkedin.com/in/machadorafa/" class="in white"><i
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card card-r mx-auto text-white bg-opac mb-3" style="width: 20rem;">
+                <div class="card card-r mx-auto bg-opac mb-3" style="width: 20rem;">
                     <img src="img/bruno.jpg" class="card-img-top rounded" alt="Bruno Vilela">
                     <div class="card-body">
-                        <h5 class="card-title">Bruno Vilela</h5>
+                        <h5 class="card-title white">Bruno Vilela</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
                             card's content.</p>
-                        <a href="https://github.com/vilelabruno" class="git"><i class="fab fa-github git"
+                        <a href="https://github.com/vilelabruno" class="git white"><i class="fab fa-github git"
                                 style="margin-right: 5%;"></i></a>
-                        <a href="https://www.linkedin.com/in/vilelabruno00/" class="in"><i
+                        <a href="https://www.linkedin.com/in/vilelabruno00/" class="in white"><i
                                 class="fab fa-linkedin-in in"></i></a>
                     </div>
                 </div>
@@ -301,9 +309,9 @@
         <div class="row">
             <ul class="list-unstyled">
                 <li class="media media-l bg-opac">
-                    <i class="fas fa-chart-line do-icon mr-3"></i>
+                    <i class="fas fa-chart-line do-icon mr-3 white"></i>
                     <div class="media-body">
-                        <h5 class="mt-0 mb-2">Otimização</h5>
+                        <h5 class="mt-0 mb-2 white">Otimização</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                         purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
                         vulputate fringilla. Donec lacinia congue felis in faucibus.
@@ -312,18 +320,18 @@
 
                 <li class="media media-r bg-opac my-5">
                     <div class="media-body text-right">
-                        <h5 class="mt-0 mb-2">Tomada de Decisão</h5>
+                        <h5 class="mt-0 mb-2 white">Tomada de Decisão</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                         purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
                         vulputate fringilla. Donec lacinia congue felis in faucibus.
                     </div>
-                    <i class="fas fa-balance-scale-right do-icon ml-3"></i>
+                    <i class="fas fa-balance-scale-right do-icon ml-3 white"></i>
                 </li>
 
                 <li class="media media-l bg-opac">
-                    <i class="far fa-smile-beam do-icon mr-3"></i>
+                    <i class="far fa-smile-beam do-icon mr-3 white"></i>
                     <div class="media-body">
-                        <h5 class="mt-0 mb-2">Análise de Sentimentos</h5>
+                        <h5 class="mt-0 mb-2 white">Análise de Sentimentos</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                         purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
                         vulputate fringilla. Donec lacinia congue felis in faucibus.
@@ -332,12 +340,12 @@
 
                 <li class="media media-r bg-opac my-5">
                     <div class="media-body text-right">
-                        <h5 class="mt-0 mb-2">IoT</h5>
+                        <h5 class="mt-0 mb-2 white">IoT</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                         purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
                         vulputate fringilla. Donec lacinia congue felis in faucibus.
                     </div>
-                    <i class="fas fa-wifi do-icon ml-3"></i>
+                    <i class="fas fa-wifi do-icon ml-3 white"></i>
                 </li>
             </ul>
         </div>
@@ -421,8 +429,8 @@
 
     <!-- FOOTER INIT -->
     <div id="footer">
-        <div class="container text-center">
-            <div class="row row-cols-5" style="padding: 5%;">
+        <div class="container">
+            <div class="row row-cols-5" style="margin: 8%; margin-bottom: 5%;">
                 <div class="col">
                     <div class="titleFooter">Produtos</div>
                     <div class="itensFooter">lorem</div>
@@ -431,9 +439,10 @@
                 </div>
                 <div class="col">
                     <div class="titleFooter">Serviços</div>
-                    <div class="itensFooter">lorem</div>
-                    <div class="itensFooter">lorem</div>
-                    <div class="itensFooter">lorem</div>
+                    <div class="itensFooter">Otimização</div>
+                    <div class="itensFooter">Tomada de Decisão</div>
+                    <div class="itensFooter">Análise de Sentimentos</div>
+                    <div class="itensFooter">IoT</div>
                 </div>
                 <div class="col">
                     <div class="titleFooter">Publicações</div>
@@ -443,23 +452,22 @@
                 </div>
                 <div class="col">
                     <div class="titleFooter">Sobre</div>
-                    <div class="itensFooter">lorem</div>
-                    <div class="itensFooter">lorem</div>
-                    <div class="itensFooter">lorem</div>
+                    <div class="itensFooter">A Empresa</div>
+                    <div class="itensFooter">O Time</div>
                 </div>
-                <div class="col social">
+                <div class="col social text-center">
                     <div>
                         <img src="img/summaLogoWhite.png">
                     </div>
                     <div>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in ml-4 mr-4"></i>
-                        <i class="fab fa-github"></i>
+                        <a href="https://twitter.com/SummaPeD" class="twit"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="in"><i class="fab fa-linkedin-in ml-4 mr-4"></i></a>
+                        <a href="https://github.com/summa-ped" class="git"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="copyright">
+            <div class="copyright text-center">
                 <p>Copyright <i class="far fa-copyright"></i> Todos os direitos reservados <b
                         style="font-weight: 800!important;">Summa P&D</b> 2020</p>
             </div>
