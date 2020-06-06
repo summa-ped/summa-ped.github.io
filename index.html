@@ -88,7 +88,7 @@
         }
 
         .shw {
-            text-shadow: 0px 0px 8px  #000;
+            text-shadow: 0px 0px 8px #000;
         }
 
         .do-icon {
@@ -102,10 +102,12 @@
             padding: 1.2%;
             border-radius: 3px;
         }
+
         .media-l {
             margin-right: 45%;
-            
+
         }
+
         .media-r {
             margin-left: 45%;
         }
@@ -138,12 +140,17 @@
         ::-webkit-scrollbar-thumb:hover {
             background: rgba(37, 37, 37, 0.582);
         }
+
         .form-control:focus {
             color: #495057;
             background-color: #fff;
             border-color: #5252529f;
             outline: 0;
-            box-shadow: 0 0 0 0.2rem rgba(46, 46, 46, 0.25) !important; 
+            box-shadow: 0 0 0 0.2rem rgba(46, 46, 46, 0.25) !important;
+        }
+
+        .itensFooter {
+            margin-top: 5%;
         }
     </style>
 </head>
@@ -156,20 +163,22 @@
             <div class="sp"></div>
 
             <div class="sp"></div>
-            
+
             <ul class="list-group" style="font-size: xx-large;">
                 <li id="li1" style="display: none;" class="list-group-item">Home</li>
                 <li id="li2" style="display: none;" class="list-group-item">Nossas Soluções</li>
                 <li id="li3" style="display: none;" class="list-group-item">A Empresa</li>
                 <li id="li4" style="display: none;" class="list-group-item">Blog</li>
-              </ul>
+            </ul>
         </div>
         <div id="navbar" class="container-fluid">
             <nav class="navbar text-center">
                 <div class="btn-group" role="group">
                     <ol class="breadcrumb" style="background: none!important;">
-                        <li class="breadcrumb-item active"><button id="pt" type="button" onclick="changeLang(0)" class="btn btn-language active">PT</button></li>
-                        <li class="breadcrumb-item"><button id="en" type="button" onclick="changeLang(1)" class="btn btn-language">EN</button></li>
+                        <li class="breadcrumb-item active"><button id="pt" type="button" onclick="changeLang(0)"
+                                class="btn btn-language active">PT</button></li>
+                        <li class="breadcrumb-item"><button id="en" type="button" onclick="changeLang(1)"
+                                class="btn btn-language">EN</button></li>
                     </ol>
                 </div>
                 <a href="#" class="navbar-brand mx-auto" style="width: 10%;">
@@ -179,7 +188,8 @@
                 <div class="hamburgerMenu align-middle">
                     <input type="checkbox" id="btn">
 
-                    <label class="menu" for="btn" style="border-radius: 50%; padding: 3%; background-color: rgba(0, 0, 0, 0.75);">
+                    <label class="menu" for="btn"
+                        style="border-radius: 50%; padding: 3%; background-color: rgba(0, 0, 0, 0.75);">
                         <span class="top">
                             <span class="inner"></span>
                         </span>
@@ -204,7 +214,8 @@
                 <div class="mx-auto" id="hOne" style="width: 70%; ">
                     <h1 class="agency">Seu negócio, nossas soluções</h1>
                     <div style="border-bottom: 2px solid; width: 80%; margin-bottom: 3%; margin-top: 3%;"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
                         et
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                         aliquip
@@ -213,8 +224,11 @@
                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                         deserunt mollit anim id est laborum.</p>
                     <button id="openContact" onclick="openContact()" class="btn btn-outline-light">Conheça!</button>
-                    <textarea class="form-control" id="txtArea" style="background-color: rgba(48, 41, 41, 0.342); color: #f1f1f1; display: none;" placeholder="Conte como podemos ajudar seu negócio!" autofocus> </textarea>
-                    <button onclick="sendMsg()" id="sendMsg" class="btn btn-outline-light" style="margin-top: 5px; display: none;">Enviar</button>
+                    <textarea class="form-control" id="txtArea"
+                        style="background-color: rgba(48, 41, 41, 0.342); color: #f1f1f1; display: none;"
+                        placeholder="Conte como podemos ajudar seu negócio!" autofocus> </textarea>
+                    <button onclick="sendMsg()" id="sendMsg" class="btn btn-outline-light"
+                        style="margin-top: 5px; display: none;">Enviar</button>
                 </div>
             </div>
         </div>
@@ -297,7 +311,7 @@
                         vulputate fringilla. Donec lacinia congue felis in faucibus.
                     </div>
                 </li>
-                
+
                 <li class="media media-r bg-opac my-5">
                     <div class="media-body text-right">
                         <h5 class="mt-0 mb-2">Tomada de Decisão</h5>
@@ -307,7 +321,7 @@
                     </div>
                     <i class="fas fa-balance-scale-right do-icon ml-3"></i>
                 </li>
-                
+
                 <li class="media media-l bg-opac">
                     <i class="far fa-smile-beam do-icon mr-3"></i>
                     <div class="media-body">
@@ -337,37 +351,48 @@
     <div class="parallaxTech" style="padding-bottom: 2%; padding-top: 2%; padding-right: 8%; padding-left: 8%;">
         <div id="tech">
             <div>
-                <a href="https://keras.io/" class="techs"><img src="img/techs/keras.jpeg" class="techs mx-auto" alt="Keras"></a>
+                <a href="https://keras.io/" class="techs"><img src="img/techs/keras.jpeg" class="techs mx-auto"
+                        alt="Keras"></a>
             </div>
             <div>
-                <a href="https://www.tensorflow.org/" class="techs"><img src="img/techs/tensorflow.png" class="techs mx-auto" alt="Tensorflow"></a>
+                <a href="https://www.tensorflow.org/" class="techs"><img src="img/techs/tensorflow.png"
+                        class="techs mx-auto" alt="Tensorflow"></a>
             </div>
             <div>
-                <a href="https://www.python.org/" class="techs"><img src="img/techs/python.png" class="techs mx-auto" alt="Python"></a>
+                <a href="https://www.python.org/" class="techs"><img src="img/techs/python.png" class="techs mx-auto"
+                        alt="Python"></a>
             </div>
             <div>
-                <a href="https://scikit-learn.org/stable/" class="techs"><img src="img/techs/scikit.jpg" class="techs mx-auto" alt="Scikit Learn"></a>
+                <a href="https://scikit-learn.org/stable/" class="techs"><img src="img/techs/scikit.jpg"
+                        class="techs mx-auto" alt="Scikit Learn"></a>
             </div>
             <div>
-                <a href="https://pandas.pydata.org/" class="techs"><img src="img/techs/pandas.jpg" class="techs mx-auto" alt="Pandas"></a>
+                <a href="https://pandas.pydata.org/" class="techs"><img src="img/techs/pandas.jpg" class="techs mx-auto"
+                        alt="Pandas"></a>
             </div>
             <div>
-                <a href="https://www.ibm.com/analytics/cplex-optimizer" class="techs"><img src="img/techs/cplex.png" class="techs mx-auto" alt="CPLEX"></a>
+                <a href="https://www.ibm.com/analytics/cplex-optimizer" class="techs"><img src="img/techs/cplex.png"
+                        class="techs mx-auto" alt="CPLEX"></a>
             </div>
             <div>
-                <a href="https://catboost.ai/" class="techs"><img src="img/techs/catboost.png" class="techs mx-auto" alt="CatBoost"></a>
+                <a href="https://catboost.ai/" class="techs"><img src="img/techs/catboost.png" class="techs mx-auto"
+                        alt="CatBoost"></a>
             </div>
             <div>
-                <a href="https://xgboost.ai/" class="techs"><img src="img/techs/xgboost.png" class="techs mx-auto" alt="XGBoost"></a>
+                <a href="https://xgboost.ai/" class="techs"><img src="img/techs/xgboost.png" class="techs mx-auto"
+                        alt="XGBoost"></a>
             </div>
             <div>
-                <a href="https://www.docker.com/" class="techs"><img src="img/techs/docker.png" class="techs mx-auto" alt="Docker"></a>
+                <a href="https://www.docker.com/" class="techs"><img src="img/techs/docker.png" class="techs mx-auto"
+                        alt="Docker"></a>
             </div>
             <div>
-                <a href="https://nodejs.org/en/" class="techs"><img src="img/techs/node.png" class="techs mx-auto" alt="Node JS"></a>
+                <a href="https://nodejs.org/en/" class="techs"><img src="img/techs/node.png" class="techs mx-auto"
+                        alt="Node JS"></a>
             </div>
             <div>
-                <a href="https://www.microsoft.com/en-us/research/project/lightgbm/" class="techs"><img src="img/techs/lightgbm.png" class="techs mx-auto" alt="LightGBM"></a>
+                <a href="https://www.microsoft.com/en-us/research/project/lightgbm/" class="techs"><img
+                        src="img/techs/lightgbm.png" class="techs mx-auto" alt="LightGBM"></a>
             </div>
         </div>
     </div>
@@ -398,12 +423,53 @@
 
     <!-- FOOTER INIT -->
     <div id="footer">
-        <div class="container text-center" style="margin-top: 1%;">
-            <p>Copyright <i class="far fa-copyright"></i> Todos os direitos reservados <b style="font-weight: 800!important;">Summa P&D</b> 2020</p>
+        <div class="container text-center">
+            <div class="row row-cols-5" style="padding: 5%;">
+                <div class="col">
+                    <div class="titleFooter">Produtos</div>
+                    <div class="itensFooter">lorem</div>
+                    <div class="itensFooter">lorem</div>
+                    <div class="itensFooter">lorem</div>
+                </div>
+                <div class="col">
+                    <div class="titleFooter">Serviços</div>
+                    <div class="itensFooter">lorem</div>
+                    <div class="itensFooter">lorem</div>
+                    <div class="itensFooter">lorem</div>
+                </div>
+                <div class="col">
+                    <div class="titleFooter">Publicações</div>
+                    <div class="itensFooter">lorem</div>
+                    <div class="itensFooter">lorem</div>
+                    <div class="itensFooter">lorem</div>
+                </div>
+                <div class="col">
+                    <div class="titleFooter">Sobre</div>
+                    <div class="itensFooter">lorem</div>
+                    <div class="itensFooter">lorem</div>
+                    <div class="itensFooter">lorem</div>
+                </div>
+                <div class="col social">
+                    <div>
+                        <img src="img/summaLogoWhite.png">
+                    </div>
+                    <div>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in ml-4 mr-4"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright <i class="far fa-copyright"></i> Todos os direitos reservados <b
+                        style="font-weight: 800!important;">Summa P&D</b> 2020</p>
+            </div>
         </div>
     </div>
     <!-- FOOTER END -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>

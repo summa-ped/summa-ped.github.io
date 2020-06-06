@@ -111,7 +111,19 @@ a{
     border-radius: 50%;
 }
 
+.social {
+    font-size: x-large; 
+}
 
+.social > div > img {
+    width: 60%;
+    padding: 10%;
+    padding-top: 5%;
+}
+
+.titleFooter {
+    font-weight: 800!important;
+}
 
 /*
 .summa {
