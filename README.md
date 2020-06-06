@@ -1,2 +1,3 @@
 # Summa R&D
-## summard.github.io
+
+The start up company that upgrades your business.
