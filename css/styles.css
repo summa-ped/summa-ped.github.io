@@ -76,6 +76,7 @@ a:hover {
     font-weight: 300;
     opacity: 0;
     transition: all 0.5s ease-in;
+    cursor: default;
 }
 
 .agency {
@@ -413,4 +414,8 @@ a:hover {
 
 .company > .row > .bg-opac {
     padding: 3%;
+}
+
+.ser-box {
+    padding: 2%;
 }
