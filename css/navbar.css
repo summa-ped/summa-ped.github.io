@@ -135,15 +135,18 @@ body {
 .btn-group{
     background-color: transparent;
 }
+.btn-language {
+  color: gray;
+}
 .btn-language:hover{
-    color: #fff;
+    color: lightgray;
 }
 .btn-language:focus{
     color: #fff;
     box-shadow: none;
 }
 .active{
-    color: #fff;
+    color: #fff!important;
 }
 #centralLogo:hover{
   transform: scale(1.1);
@@ -154,7 +157,7 @@ body {
   margin: 0px!important;
 }
 .center-fix{
-  width: 5%;
+  width: 9.5%;
 }
 .menuHid{
   width: 25%;
